@@ -3,7 +3,8 @@ sudo: required
     - docker
 
   before_install:
-    - docker -t deepthisagar90/new-image1 build .
+    - docker -t deepthisagar90/new-image1image2 -f build  Dockerfile .
 
   script:
-    docker run -e CI=true deepthisagar90/newimage1 npm run test
+    docker run -e CI=true deepthisagar90/new-image1image2 npm run test -- -- coverage
+
