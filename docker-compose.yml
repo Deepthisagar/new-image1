@@ -1,0 +1,10 @@
+version: 3
+  services:
+    redis-server:
+      image: redis
+
+    new-image1:
+      build: .
+
+     ports:
+      - "8080:8081"
