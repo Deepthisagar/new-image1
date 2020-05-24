@@ -7,3 +7,4 @@ sudo: required
 
   script:
     docker run -e CI=true deepthisagar90/new-image1image2 npm run test -- -- coverage
+
