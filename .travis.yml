@@ -6,4 +6,4 @@ sudo: required
     - docker -t deepthisagar90/new-image1 build .
 
   script:
-    docker run -e CI=true deepthisagar90/newimage1 npm run test -- -- coverage
+    docker run -e CI=true deepthisagar90/newimage1 npm run test
